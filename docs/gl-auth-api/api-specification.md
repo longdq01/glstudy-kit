@@ -73,6 +73,13 @@ Unified login endpoint for both local and SSO flows.
 | New user (email not found) | `true` | one-time token | null | Call `POST /v1/users/signup` with `token` |
 | Email exists under different provider | `false` | null | confirm code | Call `GET /v1/auth/confirm-link?confirmCode=...` |
 
+**Error cases (both local and SSO):**
+
+| Condition | HTTP | Code | Message |
+|---|---|---|---|
+| Wrong password / bad credentials | 403 | `Forbidden` | Không xác thực được thông tin người dùng |
+| Account is inactive (FR-019) | 401 | `Unauthorized` | Account is inactive. Contact support. |
+
 ---
 
 ### GET `/v1/auth/confirm-link`

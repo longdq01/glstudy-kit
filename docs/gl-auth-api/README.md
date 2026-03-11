@@ -43,6 +43,5 @@ Logout revokes the access token in Redis. Refresh token rotation is handled by `
 ## Related Docs
 
 - [Schema](./schema.md) – Auth database schema
-- [API](./api.md) – Endpoint reference
-- [System Architecture](../02-architecture.md)
-- [Project Overview](../01-project-overview.md)
+- [API](./api-specification.md) – Endpoint reference
+- [System Architecture](../architecture.md)

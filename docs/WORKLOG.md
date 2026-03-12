@@ -146,27 +146,27 @@ MVP = **5 sprints × 2 weeks ≈ 10 weeks total**
 > Docs: [`docs/frontend/`](./frontend/README.md)
 
 **Sprint 1 – Setup & Config**
-- [ ] Next.js 14 (App Router) + TypeScript scaffold
-- [ ] Tailwind CSS + Radix UI setup
-- [ ] Zustand store setup (auth-store, video-store)
-- [ ] React Query setup (server state)
-- [ ] Axios API client with interceptors (attach JWT, handle 401 refresh)
-- [ ] ESLint + Prettier + Husky
-- [ ] Frontend design system (Tailwind config, tokens, base components)
-- [ ] Landing page (`/`)
+- [x] Next.js 14 (App Router) + TypeScript scaffold
+- [x] Tailwind CSS + Radix UI setup
+- [x] Zustand store setup (auth-store, video-store)
+- [x] React Query setup (server state)
+- [x] Axios API client with interceptors (attach JWT, handle 401 refresh)
+- [x] ESLint + Prettier + Husky
+- [x] Frontend design system (Tailwind config, tokens, base components)
+- [x] Landing page (`/`)
 
 **Sprint 2 – Auth Pages**
 - [x] Login page + form validation (`/login`)
-- [x] Register page + explicit username field, availability checks (`/login` register tab)
-- [x] SSO buttons — Google, GitHub (OAuth2 redirect handlers wired)
-- [x] OAuth2 callback BFF route (`/api/auth/oauth2/[provider]/callback`)
-- [x] SSO register page — username selection for new SSO users (`/auth/sso-register`)
-- [x] Confirm-link page + BFF route (`/auth/confirm-link`)
-- [x] AuthGuard + protected routes + `?from=` URL capture
-- [x] Inactive account error handling (`?error=account_inactive`)
-- [x] BFF routes: check-email, check-username, set-password
-- [x] Profile page — linked providers + set-password for SSO-only users (`/profile`)
-- [ ] Navbar with auth state (user menu, login/logout)
+- [/] Register page + explicit username field, availability checks (`/login` register tab)
+- [/] SSO buttons — Google, GitHub (OAuth2 redirect handlers wired)
+- [ ] OAuth2 callback BFF route (`/api/auth/oauth2/[provider]/callback`)
+- [ ] SSO register page — username selection for new SSO users (`/auth/sso-register`)
+- [ ] Confirm-link page + BFF route (`/auth/confirm-link`)
+- [/] AuthGuard + protected routes + `?from=` URL capture
+- [ ] Inactive account error handling (`?error=account_inactive`)
+- [ ] BFF routes: check-email, check-username, set-password
+- [/] Profile page — linked providers + set-password for SSO-only users (`/profile`)
+- [x] Navbar with auth state (user menu, login/logout)
 
 **Sprint 3 – Video Catalog**
 - [ ] Video catalog page with filters, search, pagination (`/videos`)
